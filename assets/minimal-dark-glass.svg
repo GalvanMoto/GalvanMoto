@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Monochrome Soft Drop Shadow -->
+    <filter id="glass-shadow" x="-5%" y="-5%" width="115%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.75" />
+    </filter>
+
+    <!-- Dark Grey Frosted Glass Fill -->
+    <linearGradient id="matte-glass-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1f26" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#121418" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Crisp Subtle Border -->
+    <linearGradient id="matte-glass-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.12" />
+    </linearGradient>
+
+    <!-- Pill Backgrounds -->
+    <linearGradient id="matte-pill-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242832" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#181a21" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="matte-pill-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04" />
+    </linearGradient>
+
+    <style>
+      @keyframes pulse-subtle {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 0.85; }
+      }
+      .live-dot { animation: pulse-subtle 3s ease-in-out infinite; }
+      .sf-font {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Matte Dark Grey Canvas Background (Zero Color) -->
+  <rect width="100%" height="100%" rx="20" fill="#0c0d11" />
+
+  <!-- Subtle Neutral Dark Grid -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="75" x2="1200" y2="75" />
+    <line x1="0" y1="150" x2="1200" y2="150" />
+    <line x1="0" y1="225" x2="1200" y2="225" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="375" x2="1200" y2="375" />
+    <line x1="150" y1="0" x2="150" y2="460" />
+    <line x1="300" y1="0" x2="300" y2="460" />
+    <line x1="450" y1="0" x2="450" y2="460" />
+    <line x1="600" y1="0" x2="600" y2="460" />
+    <line x1="750" y1="0" x2="750" y2="460" />
+    <line x1="900" y1="0" x2="900" y2="460" />
+    <line x1="1050" y1="0" x2="1050" y2="460" />
+  </g>
+
+  <!-- Central Frosted Apple Glass Card -->
+  <g filter="url(#glass-shadow)">
+    <rect x="40" y="35" width="1120" height="390" rx="18" fill="url(#matte-glass-bg)" stroke="url(#matte-glass-border)" stroke-width="1.2" />
+    <!-- Specular Highlight Line on Top Edge -->
+    <line x1="65" y1="36" x2="1135" y2="36" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1" stroke-linecap="round" />
+  </g>
+
+  <!-- Minimal Apple Window Controls (Monochrome Silver/White Dots) -->
+  <g transform="translate(75, 68)">
+    <circle cx="0" cy="0" r="5" fill="#ffffff" fill-opacity="0.3" />
+    <circle cx="16" cy="0" r="5" fill="#ffffff" fill-opacity="0.18" />
+    <circle cx="32" cy="0" r="5" fill="#ffffff" fill-opacity="0.18" />
+  </g>
+
+  <!-- Status Pill (Top Right) -->
+  <g transform="translate(930, 56)">
+    <rect width="190" height="28" rx="14" fill="url(#matte-pill-bg)" stroke="url(#matte-pill-border)" stroke-width="1" />
+    <circle cx="16" cy="14" r="3" fill="#ffffff" class="live-dot" />
+    <text x="28" y="18" fill="#e2e8f0" font-size="11" font-weight="600" class="sf-font" letter-spacing="1">FOUNDER &amp; BUILDER</text>
+  </g>
+
+  <!-- Main Hero Typography -->
+  <g transform="translate(75, 145)">
+    <!-- Eyebrow Subtitle -->
+    <text x="0" y="0" fill="#94a3b8" font-size="12.5" font-weight="600" class="sf-font" letter-spacing="2.5">CREOVIRA DIGITAL • RUNOSO • TECH WITH GALVAN</text>
+
+    <!-- Main Title (Crisp Pure White) -->
+    <text x="0" y="52" fill="#ffffff" font-size="50" font-weight="800" class="sf-font" letter-spacing="-1">Gautam Parmar</text>
+
+    <!-- Description (Neutral Slate Grey) -->
+    <text x="0" y="90" fill="#94a3b8" font-size="17" font-weight="400" class="sf-font" letter-spacing="0.2">
+      Building scalable SaaS platforms, modern web architecture &amp; autonomous software.
+    </text>
+  </g>
+
+  <!-- Product Pills (Bottom) -->
+  <g transform="translate(75, 295)">
+    <!-- Pill 1: RunoSO -->
+    <g transform="translate(0, 0)">
+      <rect width="235" height="74" rx="12" fill="url(#matte-pill-bg)" stroke="url(#matte-pill-border)" stroke-width="1" />
+      <text x="20" y="32" fill="#ffffff" font-size="15.5" font-weight="700" class="sf-font">RunoSO</text>
+      <text x="20" y="54" fill="#64748b" font-size="12" font-weight="500" class="sf-font">SaaS for Solo Founders</text>
+    </g>
+
+    <!-- Pill 2: Personal OS -->
+    <g transform="translate(255, 0)">
+      <rect width="235" height="74" rx="12" fill="url(#matte-pill-bg)" stroke="url(#matte-pill-border)" stroke-width="1" />
+      <text x="20" y="32" fill="#ffffff" font-size="15.5" font-weight="700" class="sf-font">Personal OS</text>
+      <text x="20" y="54" fill="#64748b" font-size="12" font-weight="500" class="sf-font">AI Command Center</text>
+    </g>
+
+    <!-- Pill 3: Creovira Digital -->
+    <g transform="translate(510, 0)">
+      <rect width="250" height="74" rx="12" fill="url(#matte-pill-bg)" stroke="url(#matte-pill-border)" stroke-width="1" />
+      <text x="20" y="32" fill="#ffffff" font-size="15.5" font-weight="700" class="sf-font">Creovira Digital</text>
+      <text x="20" y="54" fill="#64748b" font-size="12" font-weight="500" class="sf-font">Web &amp; SaaS Agency</text>
+    </g>
+
+    <!-- Pill 4: Tech With Galvan -->
+    <g transform="translate(780, 0)">
+      <rect width="270" height="74" rx="12" fill="url(#matte-pill-bg)" stroke="url(#matte-pill-border)" stroke-width="1" />
+      <text x="20" y="32" fill="#ffffff" font-size="15.5" font-weight="700" class="sf-font">Tech With Galvan</text>
+      <text x="20" y="54" fill="#64748b" font-size="12" font-weight="500" class="sf-font">YouTube &amp; Developer Hub</text>
+    </g>
+  </g>
+</svg>
