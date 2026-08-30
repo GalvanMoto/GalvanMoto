@@ -81,5 +81,5 @@ interests: [Autonomous AI, Minimalist UI/UX, SaaS Engineering, macOS Tooling]
 ---
 
 <div align="center">
-  <sub>Designed with minimal  <b>Glassmorphism</b> by <b>Gautam Parmar (@GalvanMoto)</b></sub>
+  <sub>Having a great coding life ❤️</sub>
 </div>
